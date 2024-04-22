@@ -9,11 +9,9 @@ function App() {
   return (
     <>
       <TasksProvider>
-        <AuthProvider>
-          <h1>React State Management Demo</h1>
-          <NavBar />
-          <HomePage />
-        </AuthProvider>
+        <h1>React State Management Demo</h1>
+        <NavBar />
+        <HomePage />
       </TasksProvider>
       <Counter />
     </>
