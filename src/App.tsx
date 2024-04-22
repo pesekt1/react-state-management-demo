@@ -1,7 +1,7 @@
 import "./App.css";
 import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
-import TasksProvider from "./providers/TasksProvider";
+import TasksProvider from "./tasks/TasksProvider";
 import AuthProvider from "./providers/AuthProvider";
 
 function App() {
