@@ -1,8 +1,9 @@
 import useAuthStore from "../auth/store";
+import useTaskStore from "./store";
 import useTasks from "./useTasks";
 
 const TaskList = () => {
-  const { tasks, dispatch } = useTasks();
+  const { tasks, add, remove } = useTaskStore();
   const { user } = useAuthStore();
 
   return (
@@ -10,12 +11,9 @@ const TaskList = () => {
       <div>User: {user}</div>
       <button
         onClick={() =>
-          dispatch({
-            type: "ADD",
-            task: {
-              id: Date.now(),
-              title: `Task ${Date.now()}`,
-            },
+          add({
+            id: Date.now(),
+            title: `Task ${Date.now()}`,
           })
         }
         className="btn btn-primary my-3"
@@ -31,7 +29,7 @@ const TaskList = () => {
             <span className="flex-grow-1">{task.title}</span>
             <button
               className="btn btn-outline-danger"
-              onClick={() => dispatch({ type: "DELETE", taskId: task.id })}
+              onClick={() => remove(task.id)}
             >
               Delete
             </button>
