@@ -17,7 +17,6 @@ function App() {
         <NavBar />
         <HomePage />
       </TasksContext.Provider>
-      <TaskList />
     </>
   );
 }
