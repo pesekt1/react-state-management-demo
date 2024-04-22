@@ -1,8 +1,8 @@
 import "./App.css";
 import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
-import TasksProvider from "./tasks/TasksProvider";
-import AuthProvider from "./providers/AuthProvider";
+import TasksProvider from "./components/tasks/TasksProvider";
+import AuthProvider from "./components/auth/AuthProvider";
 
 function App() {
   return (
