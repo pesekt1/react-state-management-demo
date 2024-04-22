@@ -1,12 +1,12 @@
 import "./App.css";
-import Counter from "./components/Counter";
+import LoginStatus from "./components/LoginStatus";
 import TaskList from "./components/TaskList";
 
 function App() {
   return (
     <>
       <h1>React State Management Demo</h1>
-      <Counter />
+      <LoginStatus />
       <TaskList />
     </>
   );
