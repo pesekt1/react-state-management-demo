@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
 import TasksProvider from "./components/tasks/TasksProvider";
 import AuthProvider from "./components/auth/AuthProvider";
+import Counter from "./components/counter/Counter";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <HomePage />
         </AuthProvider>
       </TasksProvider>
+      <Counter />
     </>
   );
 }
